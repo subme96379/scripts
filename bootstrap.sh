@@ -20,34 +20,26 @@ echo "Removing binaries..."
 cd /home/northern/.northern/blocks/
 echo "Downloading Bootstrap file"
 echo "Updating 1st Master Node Block files, please wait...";
-wget https://drive.google.com/file/d/1gxFfO_dywcSrhpmBQiaqNvt-ozfu5WHD/view?usp=sharing
-tar -xzf bootstrap.tgz bootstrap.dat
+wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern/blocks/
-rm -rf bootstrap.tgz
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
 cd /home/northern/.northern2/blocks/
-wget https://drive.google.com/file/d/1gxFfO_dywcSrhpmBQiaqNvt-ozfu5WHD/view?usp=sharing
-tar -xzf bootstrap.tgz bootstrap.dat
+wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern2/blocks/
-rm -rf bootstrap.tgz
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
 cd /home/northern/.northern3/blocks/
-wget https://drive.google.com/file/d/1gxFfO_dywcSrhpmBQiaqNvt-ozfu5WHD/view?usp=sharing
-tar -xzf bootstrap.tgz bootstrap.dat
+wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern3/blocks/
-rm -rf bootstrap.tgz
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
 cd /home/northern/.northern4/blocks/
-wget https://drive.google.com/file/d/1gxFfO_dywcSrhpmBQiaqNvt-ozfu5WHD/view?usp=sharing
-tar -xzf bootstrap.tgz bootstrap.dat
+wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern4/blocks/
-rm -rf bootstrap.tgz
 sleep 10
 echo "Syncing first node, please wait...";
 northernd -datadir=/home/northern/.northern -daemon -dbcache=1000
