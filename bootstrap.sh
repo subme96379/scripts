@@ -21,25 +21,21 @@ cd /root/home/northern/.northern/blocks/
 echo "Downloading Bootstrap file"
 echo "Updating 1st Master Node Block files, please wait...";
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
-sudo chmod 755 -R  /home/northern/.northern/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
 cd /root/home/northern/.northern2/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
-sudo chmod 755 -R  /home/northern/.northern2/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
 cd /root/home/northern/.northern3/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
-sudo chmod 755 -R  /home/northern/.northern3/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
 cd /root/home/northern/.northern4/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
-sudo chmod 755 -R  /home/northern/.northern4/blocks/
 sleep 10
 echo "Syncing first node, please wait...";
 northernd -datadir=/home/northern/.northern -daemon -dbcache=1000
