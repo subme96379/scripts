@@ -13,11 +13,11 @@ echo "Stopping second node, please wait...";
 northern-cli -datadir=/home/northern2/.northern stop
 echo "Stopping third node, please wait...";
 northern-cli -datadir=/home/northern3/.northern stop
-echo "Stopping fourth node, please wait...";
+echo "cStopping fourth node, please wait...";
 northern-cli -datadir=/home/northern4/.northern stop
 sleep 10
 echo "Removing binaries..."
-cd /home/northern/.northern/blocks/
+cd /root/home/northern/.northern/blocks/
 echo "Downloading Bootstrap file"
 echo "Updating 1st Master Node Block files, please wait...";
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
@@ -25,19 +25,19 @@ sudo chmod 755 -R  /home/northern/.northern/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
-cd /home/northern/.northern2/blocks/
+cd /root/home/northern/.northern2/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern2/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
-cd /home/northern/.northern3/blocks/
+cd /root/home/northern/.northern3/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern3/blocks/
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
-cd /home/northern/.northern4/blocks/
+cd /root/home/northern/.northern4/blocks/
 wget https://drive.google.com/file/d/1Yvg30yEibEyXN_jB3tsTnG6iqmykNovH/view?usp=sharing
 sudo chmod 755 -R  /home/northern/.northern4/blocks/
 sleep 10
