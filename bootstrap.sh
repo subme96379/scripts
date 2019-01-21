@@ -21,7 +21,7 @@ cd /home/northern/.northern/blocks/
 echo "Downloading Bootstrap file"
 echo "Updating 1st Master Node Block files, please wait...";
 wget https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
-tar -xzf bootstrap.tar
+tar -xzf bootstrap.tar bootstrap.dat
 sudo chmod 755 -R  /home/northern/.northern/blocks/
 rm -rf bootstrap.tar
 sleep 5
@@ -29,7 +29,7 @@ echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
 cd /home/northern/.northern2/blocks/
 wget https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
-tar -xzf bootstrap.tar
+tar -xzf bootstrap.tar bootstrap.dat
 sudo chmod 755 -R  /home/northern/.northern2/blocks/
 rm -rf bootstrap.tar
 sleep 5
@@ -37,7 +37,7 @@ echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
 cd /home/northern/.northern3/blocks/
 wget https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
-tar -xzf bootstrap.tar
+tar -xzf bootstrap.tar bootstrap.dat
 sudo chmod 755 -R  /home/northern/.northern3/blocks/
 rm -rf bootstrap.tar
 sleep 5
@@ -45,7 +45,7 @@ echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
 cd /home/northern/.northern4/blocks/
 wget https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
-tar -xzf bootstrap.tar
+tar -xzf bootstrap.tar bootstrap.dat
 sudo chmod 755 -R  /home/northern/.northern4/blocks/
 rm -rf bootstrap.tar
 sleep 10
