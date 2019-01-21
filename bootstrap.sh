@@ -50,22 +50,22 @@ sudo chmod 755 -R  /home/northern/.northern4/blocks/
 rm -rf bootstrap.tar
 sleep 10
 echo "Syncing first node, please wait...";
-northernd -datadir=/home/northern/.northern -daemon
+northernd -datadir=/home/northern/.northern -daemon -dbcache=1000
 until northern-cli -datadir=/home/northern/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"First node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing second node, please wait...";
-northernd -datadir=/home/northern2/.northern -daemon
+northernd -datadir=/home/northern2/.northern -daemon -dbcache=1000
 until northern-cli -datadir=/home/northern2/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Second node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing third node, please wait...";
-northernd -datadir=/home/northern3/.northern -daemon
+northernd -datadir=/home/northern3/.northern -daemon -dbcache=1000
 until northern-cli -datadir=/home/northern3/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Third node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing fourth node, please wait...";
-northernd -datadir=/home/northern4/.northern -daemon
+northernd -datadir=/home/northern4/.northern -daemon -dbcache=1000
 until northern-cli -datadir=/home/northern4/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Fourth node is fully synced. Your masternode is running!"${NC}
 sleep 5
