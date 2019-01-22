@@ -24,20 +24,20 @@ wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92d
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
-mkdir /home/northern/.northern2/blocks/
-cd /home/northern/.northern2/blocks/
+mkdir /home/northern2/.northern/blocks/
+cd /home/northern2/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
-mkdir /home/northern/.northern3/blocks/
-cd /home/northern/.northern3/blocks/
+mkdir /home/northern3/.northern/blocks/
+cd /home/northern3/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
-mkdir /home/northern/.northern4/blocks/
-cd /home/northern/.northern4/blocks/
+mkdir /home/northern4/.northern/blocks/
+cd /home/northern4/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 10
 echo "Syncing first node, please wait...";
