@@ -18,24 +18,29 @@ northern-cli -datadir=/home/northern4/.northern stop
 sleep 10
 echo "Removing binaries..."
 cd /home/northern/.northern/blocks/
+rm -r blocks
+mkdir /home/northern/.northern/blocks/
 echo "Downloading Bootstrap file"
 echo "Updating 1st Master Node Block files, please wait...";
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 2nd Master Node Block files, please wait...";
+rm -r /home/northern2/.northern/blocks
 mkdir /home/northern2/.northern/blocks/
 cd /home/northern2/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating 3rd Master Node Block files, please wait...";
+rm -r /home/northern3/.northern/
 mkdir /home/northern3/.northern/blocks/
 cd /home/northern3/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
 sleep 5
 echo "Downloading Bootstrap file"
 echo "Updating last Master Node Block files, please wait...";
+rm -r /home/northern4.northern/
 mkdir /home/northern4/.northern/blocks/
 cd /home/northern4/.northern/blocks/
 wget -O bootstrap.dat https://drive.google.com/file/d/1vng25FoBP4sxzf3p43dRqf92dJuISZ5j/view?usp=sharing
