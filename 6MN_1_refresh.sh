@@ -6,7 +6,7 @@ YELLOW='\033[0;93m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo -e ${YELLOW}"Welcome to the Northern Automated Update 2.4.0 (4in1)."${NC}
+echo -e ${YELLOW}"Welcome to the Northern Automated Update 2.4.0 (6in1)."${NC}
 echo "Please wait while updates are performed..."
 sleep 5
 echo "Stopping first node, please wait...";
