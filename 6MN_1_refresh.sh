@@ -85,17 +85,17 @@ until northern-cli -datadir=/home/northern3/.northern mnsync status | grep -m 1 
 echo -e ${GREEN}"Third node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing fourth node, please wait...";
-northernd -datadir=/home/northern4/.northern -daemon
+northernd -datadir=/home/northern4/.northern -daemon -resync
 until northern-cli -datadir=/home/northern4/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"Fourth node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing fourth node, please wait...";
-northernd -datadir=/home/northern5/.northern -daemon
+northernd -datadir=/home/northern5/.northern -daemon -resync
 until northern-cli -datadir=/home/northern5/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"5th node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing fourth node, please wait...";
-northernd -datadir=/home/northern6/.northern -daemon
+northernd -datadir=/home/northern6/.northern -daemon -resync
 until northern-cli -datadir=/home/northern6/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
 echo -e ${GREEN}"6th node is fully synced. Your masternode is running!"${NC}
 sleep 5
