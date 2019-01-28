@@ -54,8 +54,10 @@ echo "addnode=136.243.185.24" >> /home/northern4/.northern/northern.conf
 echo "addnode=107.173.141.125" >> /home/northern4/.northern/northern.conf
 
 echo "Syncing first node, please wait...";
-northernd -datadir=/home/northern/.northern -daemon
+northernd -datadir=/home/northern/.northern -daemon -staking=1 -masternode=1 
 until northern-cli -datadir=/home/northern/.northern mnsync status | grep -m 1 '"IsBlockchainSynced": true,'; do sleep 1 ; done > /dev/null 2>&1
+northern-cli -datadir=/home/northern/.northern walletpassphrase “eanutS5255” 0
+northern-cli -datadit=/home/northern/.northern masternode debug
 echo -e ${GREEN}"First node is fully synced. Your masternode is running!"${NC}
 sleep 5
 echo "Syncing second node, please wait...";
